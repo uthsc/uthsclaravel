@@ -1,0 +1,19 @@
+ip: 192.168.10.53
+memory: 2048
+cpus: 1
+provider: virtualbox
+authorize: ~/.ssh/id_rsa.pub
+keys:
+    - ~/.ssh/id_rsa
+folders:
+    -
+        map: .
+        to: /home/vagrant/Code/uthsclaravel
+sites:
+    -
+        map: uthsclaravel.uthsc.edu
+        to: /home/vagrant/Code/uthsclaravel/public
+databases:
+    - homestead
+name: uthsclaravel
+hostname: uthsclaravel

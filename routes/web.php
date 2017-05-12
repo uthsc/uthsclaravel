@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.theme');
+Route::group(['middleware' => 'casauth'], function () {
+    Route::get('/', function () {
+        return view('pages.theme');
+    });
 });

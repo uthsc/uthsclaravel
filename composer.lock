@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "17afeec9716fe345487d6ba5f6e4f542",
+    "content-hash": "065d9bb7f17fa6071dc6785fd0590805",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -234,6 +234,60 @@
                 }
             ],
             "time": "2015-04-20T18:58:01+00:00"
+        },
+        {
+            "name": "jasig/phpcas",
+            "version": "1.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Jasig/phpCAS.git",
+                "reference": "61c8899c8f91204e8b9135d795461e50fe5c2db0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Jasig/phpCAS/zipball/61c8899c8f91204e8b9135d795461e50fe5c2db0",
+                "reference": "61c8899c8f91204e8b9135d795461e50fe5c2db0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7.10"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "source/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Joachim Fritschi",
+                    "homepage": "https://wiki.jasig.org/display/~fritschi"
+                },
+                {
+                    "name": "Adam Franco",
+                    "homepage": "https://wiki.jasig.org/display/~adamfranco"
+                }
+            ],
+            "description": "Provides a simple API for authenticating users against a CAS server",
+            "homepage": "https://wiki.jasig.org/display/CASC/phpCAS",
+            "keywords": [
+                "cas",
+                "jasig"
+            ],
+            "time": "2017-04-10T19:12:45+00:00"
         },
         {
             "name": "laravel/framework",
@@ -1863,6 +1917,50 @@
                 "environment"
             ],
             "time": "2016-09-01T10:05:43+00:00"
+        },
+        {
+            "name": "xavrsl/cas",
+            "version": "v1.2.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/XavRsl/Cas.git",
+                "reference": "2f9dc56844e5e6b463bcb751d651a62c9e76111b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/XavRsl/Cas/zipball/2f9dc56844e5e6b463bcb751d651a62c9e76111b",
+                "reference": "2f9dc56844e5e6b463bcb751d651a62c9e76111b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "4.*|5.*",
+                "jasig/phpcas": "1.3.*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Xavrsl\\Cas": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Xavier Roussel",
+                    "email": "roussel.xavier@uvsq.fr"
+                }
+            ],
+            "description": "Add CAS server SSO authentication to Laravel 4 and 5",
+            "keywords": [
+                "SSO",
+                "cas",
+                "laravel",
+                "phpCAS"
+            ],
+            "time": "2017-01-31T08:21:19+00:00"
         }
     ],
     "packages-dev": [

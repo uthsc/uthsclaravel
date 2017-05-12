@@ -6,7 +6,7 @@
     <div class="row">
         <div class="medium-10 large-8 small-centered columns">
             <a href="/">
-                <img src="/assets/images/uthsc-logo-white-text.svg" alt="UTHSC logo" class="uthsc-logo"/>
+                <img src="/images/uthsc-logo-white-text.svg" alt="UTHSC logo" class="uthsc-logo"/>
             </a>
         </div>
     </div>
